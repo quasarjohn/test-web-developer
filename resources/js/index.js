@@ -4,7 +4,7 @@ const IMAGES = images;
 function imageTemplate(path, heading, description) {
     return `
     <div class="img-container">
-        <img src="../resources/assets/${path}" alt="${description}">
+        <img src="resources/assets/${path}" alt="${description}">
         <div class="img-info">
             <div>
                 <div>${heading.toUpperCase()}</div>
