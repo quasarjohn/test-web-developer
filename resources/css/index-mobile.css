@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+  aside {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    margin: 2rem;
+    margin-top: 0px !important;
+  }
+  article {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/ 5;
+    border: none;
+    margin-right: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0px !important;
+    margin-top: 2rem !important;
+  }
+  article #img-list {
+    grid-auto-rows: auto;
+  }
+  nav {
+    height: 80px;
+  }
+  nav .logo {
+    height: 2.5rem;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    background-color: #00a7e0;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  nav ul .hamburger {
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+  }
+  nav ul li {
+    display: block;
+    position: relative !important;
+    margin: 1rem;
+    display: none;
+  }
+  nav ul li a {
+    color: white !important;
+  }
+  nav ul li:hover a {
+    color: black !important;
+    cursor: pointer;
+  }
+  nav ul .selected {
+    position: relative;
+  }
+  nav ul .selected div {
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    height: 50px !important;
+    width: 50vw;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  nav ul .selected a {
+    color: black !important;
+  }
+  nav ul .selected a:hover {
+    color: black !important;
+  }
+  .hidden {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 4rem;
+  }
+  .visible {
+    height: 100vh;
+    width: 70vw;
+    margin: 1rem;
+    border-radius: 0px;
+    margin: auto;
+  }
+  .visible .hamburger {
+    display: none;
+  }
+  .visible .close-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    width: 1.5rem;
+  }
+  .visible li {
+    display: block;
+  }
+  .visible .subnav-mobile {
+    display: block;
+    border-top: solid 2px white;
+    width: 40vh;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .subnav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index-mobile.css.map */

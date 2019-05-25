@@ -1,0 +1,132 @@
+@import "variables.scss";
+
+@media (max-width: 1200px) {
+  aside {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    margin: 2rem;
+    margin-top: 0px !important;
+  }
+
+  article {
+    grid-column: 1/ 5;
+    border: none;
+    margin-right: 0px;
+    box-shadow: none;
+    margin-bottom: 0px !important;
+    margin-top: 2rem !important;
+
+    #img-list {
+      grid-auto-rows: auto;
+    }
+  }
+
+  nav {
+    height: 80px;
+
+    .logo {
+      height: 2.5rem;
+    }
+
+    ul {
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      background-color: $color-primary;
+      z-index: 3;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.2s;
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        width: 1.5rem;
+      }
+
+      li {
+        display: block;
+        position: relative !important;
+        margin: 1rem;
+        display: none;
+      }
+
+      li a {
+        color: white !important;
+      }
+
+      li:hover a {
+        color: black !important;
+        cursor: pointer;
+      }
+
+      .selected {
+        position: relative;
+
+        div {
+          position: absolute;
+          background-color: white;
+          z-index: -1;
+          height: 50px !important;
+          width: 50vw;
+          transform: translateX(-50%) !important;
+        }
+        a {
+          color: black !important;
+        }
+
+        a:hover {
+          color: black !important;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 4rem;
+  }
+
+  .visible {
+    height: 100vh;
+    width: 70vw;
+    margin: 1rem;
+    border-radius: 0px;
+
+    margin: auto;
+
+    .hamburger {
+      display: none;
+    }
+
+    .close-btn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 2rem;
+      width: 1.5rem;
+    }
+
+    li {
+      display: block;
+    }
+
+    .subnav-mobile {
+      display: block;
+      border-top: solid 2px white;
+      width: 40vh;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  .subnav {
+    display: none;
+  }
+}
